@@ -1,4 +1,4 @@
-Student Management System
+```Student Management System```
 
 This project demonstrates a simple backend REST API built using Spring Boot to manage student data.
 It supports basic CRUD operations and uses an H2 in-memory database for quick setup and testing.
