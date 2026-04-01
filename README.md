@@ -24,7 +24,7 @@ Maven
 Postman
 
 Project Structure
-
+```
 com.example.student
 │
 ├── StudentApplication.java
@@ -40,12 +40,13 @@ com.example.student
 |
 ├── Repository
 │   └── StudentRepository.java
-
+```
 Architecture
 
 The application follows a standard layered architecture:
 
 Client → Controller → Service → Repository → Database (H2)
+
 Controller handles HTTP requests
 Service contains business logic
 Repository interacts with the database
