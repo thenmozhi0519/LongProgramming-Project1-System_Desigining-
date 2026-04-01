@@ -1,11 +1,20 @@
-Student Management System (Spring Boot)
+Student Management System
+
+This project demonstrates a simple backend REST API built using Spring Boot to manage student data.
+It supports basic CRUD operations and uses an H2 in-memory database for quick setup and testing.
 
 Overview
 
-This is a REST API-based mini project built using Spring Boot to perform CRUD operations on student data.
-The project uses an H2 in-memory database, making it lightweight and easy to run without external setup.
+The application allows users to:
 
-🛠️ Tech Stack
+Add new student records
+View all students
+Update student details
+Delete student records
+
+It follows a layered architecture to separate concerns and maintain clean code.
+
+Technologies Used
 
 Java
 Spring Boot
@@ -14,40 +23,56 @@ H2 Database
 Maven
 Postman
 
-🏗️ Architecture
+Project Structure
 
-Follows a layered structure:
+com.example.student
+│
+├── StudentApplication.java
+│
+├── DAO
+│   └── Students.java
+│
+├── Service
+│   └── StudentService.java
+│
+├── Controller
+│   └── StudentController.java
+|
+├── Repository
+│   └── StudentRepository.java
 
-Controller → Service → Repository → Database (H2)
-Controller → Handles HTTP requests
-Service → Contains business logic
-Repository → Interacts with database using JPA
-H2 Database → Stores data in-memory
+Architecture
 
-⚙️ Features
+The application follows a standard layered architecture:
 
-Create student
-Retrieve all students
-Update student details
-Delete student
-Auto-generated ID
+Client → Controller → Service → Repository → Database (H2)
+Controller handles HTTP requests
+Service contains business logic
+Repository interacts with the database
+H2 stores data in memory
 
-🔗 API Endpoints
+API Endpoints
 
-Method	Endpoint	Description
-
-GET	/api/students	Get all students
-POST	/api/students	Create student
+GET	/api/students	Retrieve all students
+POST	/api/students	Create a new student
 PUT	/api/students/{id}	Update student
 DELETE	/api/students/{id}	Delete student
 
-🗄️ Database (H2)
-In-memory database (no installation required)
-Data resets when application restarts
+Sample Request
 
+POST /api/students
+{
+  "firstname": "Thenmozhi",
+  "lastname": "E",
+  "result": "Pass"
+}
 
-🎯 Key Learning
+Database
+The project uses H2 in-memory database:
+
+Key Learnings
+
 Built REST APIs using Spring Boot
-Used JPA to interact with database without writing SQL
+Used JPA for database interaction
 Understood layered architecture
-Tested APIs using Postman
+Performed API testing using Postmansing Postman
