@@ -1,5 +1,7 @@
 Student Management System (Spring Boot)
 
+Overview
+
 This is a REST API-based mini project built using Spring Boot to perform CRUD operations on student data.
 The project uses an H2 in-memory database, making it lightweight and easy to run without external setup.
 
@@ -40,23 +42,10 @@ PUT	/api/students/{id}	Update student
 DELETE	/api/students/{id}	Delete student
 
 🗄️ Database (H2)
-
 In-memory database (no installation required)
 Data resets when application restarts
 
-Access H2 Console:
 
-http://localhost:8080/h2-console
-▶️ How to Run
-Run StudentApplication.java
-Server starts at http://localhost:8080
-Test APIs using Postman
-🧪 Sample Request (POST)
-{
-  "firstname": "Thenmozhi",
-  "lastname": "E",
-  "result": "Pass"
-}
 🎯 Key Learning
 Built REST APIs using Spring Boot
 Used JPA to interact with database without writing SQL
