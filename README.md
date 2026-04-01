@@ -3,7 +3,7 @@
 This project demonstrates a simple backend REST API built using Spring Boot to manage student data.
 It supports basic CRUD operations and uses an H2 in-memory database for quick setup and testing.
 
-Overview
+```Overview```
 
 The application allows users to:
 
@@ -14,7 +14,7 @@ Delete student records
 
 It follows a layered architecture to separate concerns and maintain clean code.
 
-Technologies Used
+```Technologies Used```
 
 Java
 Spring Boot
@@ -52,7 +52,7 @@ Service contains business logic
 Repository interacts with the database
 H2 stores data in memory
 
-API Endpoints
+```API Endpoints```
 
 GET	/api/students	Retrieve all students
 POST	/api/students	Create a new student
@@ -60,18 +60,18 @@ PUT	/api/students/{id}	Update student
 DELETE	/api/students/{id}	Delete student
 
 Sample Request
-
+```
 POST /api/students
 {
   "firstname": "Thenmozhi",
   "lastname": "E",
   "result": "Pass"
 }
-
+```
 Database
 The project uses H2 in-memory database:
 
-Key Learnings
+```Key Learnings```
 
 Built REST APIs using Spring Boot
 Used JPA for database interaction
